@@ -10,7 +10,14 @@ export default {
         primary: "#61e194",
         secondary: "#48d2d2",
       },
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440px",
+      },
     },
   },
-  plugins: [],
+  // eslint-disable-next-line no-undef
+  plugins: [require("tailwindcss-animated")],
 };
