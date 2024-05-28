@@ -9,6 +9,7 @@ export default {
       colors: {
         primary: "#61e194",
         secondary: "#48d2d2",
+        tertiary: "#b5d2c1",
       },
       screens: {
         sm: "480px",

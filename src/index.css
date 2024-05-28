@@ -6,6 +6,9 @@
   html {
     font-size: "Sans", sans-serif;
   }
+  body {
+    background-color: black;
+  }
   main {
     flex: 1;
   }

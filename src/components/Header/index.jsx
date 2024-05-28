@@ -7,8 +7,8 @@ import { RiCloseLargeFill } from "react-icons/ri";
 const Header = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
   return (
-    <header className="border-b flex items-center bg-black border-primary h-[100px] relative  ">
-      <div className="max-w-7xl w-full text-primary px-5 flex justify-between m-auto items-center ">
+    <header className="border-b flex items-center  border-primary h-[100px] relative px-5  ">
+      <div className="max-w-7xl w-full text-primary  flex justify-between m-auto items-center ">
         <Logo />
         <div className="hidden  md:block">
           <Nav />

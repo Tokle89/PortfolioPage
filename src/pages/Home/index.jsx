@@ -1,7 +1,9 @@
+import HeroSection from "../../components/HeroSection";
+
 const HomePage = () => {
   return (
-    <main className="bg-black">
-      <h1>Home Page</h1>
+    <main className=" max-w-7xl w-full m-auto text-tertiary ">
+      <HeroSection />
     </main>
   );
 };
