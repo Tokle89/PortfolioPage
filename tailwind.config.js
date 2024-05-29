@@ -10,6 +10,7 @@ export default {
         primary: "#61e194",
         secondary: "#48d2d2",
         tertiary: "#b5d2c1",
+        quaternary: "#101312",
       },
       screens: {
         sm: "480px",

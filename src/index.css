@@ -6,6 +6,9 @@
   html {
     font-size: "Sans", sans-serif;
   }
+  * {
+    box-sizing: border-box;
+  }
   body {
     background-color: black;
   }

@@ -12,7 +12,7 @@ const HeroSection = () => {
         </h2>
         <div className="pt-5 flex gap-10">
           <Link to="/contact">
-            <CustomButton className={"bg-secondary border-secondary text-black hover:bg-black hover:text-secondary"}>Contact</CustomButton>
+            <CustomButton className={"bg-secondary border-secondary text-black hover:bg-black hover:text-secondary"}>Let`s talk</CustomButton>
           </Link>
 
           <Link to="/about">
