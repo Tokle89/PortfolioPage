@@ -8,17 +8,17 @@ const MobileNav = () => {
       <nav>
         <ul className="flex flex-col text-3xl gap-7 mt-10">
           <li className="hover:bg-gray-700 py-3">
-            <NavLink className={({ isActive }) => isActive && `text-white border-b border-white`} to="/">
+            <NavLink className={({ isActive }) => (isActive ? `text-white border-b border-white` : undefined)} to="/">
               Home
             </NavLink>
           </li>
           <li className="hover:bg-gray-700 py-3">
-            <NavLink className={({ isActive }) => isActive && `text-white border-b border-white`} to="/portfolio">
+            <NavLink className={({ isActive }) => (isActive ? `text-white border-b border-white` : undefined)} to="/portfolio">
               Portfolio
             </NavLink>
           </li>
           <li className="hover:bg-gray-700 py-3">
-            <NavLink className={({ isActive }) => isActive && `text-white border-b border-white`} to="/contact">
+            <NavLink className={({ isActive }) => (isActive ? `text-white border-b border-white` : undefined)} to="/contact">
               Let`s talk
             </NavLink>
           </li>

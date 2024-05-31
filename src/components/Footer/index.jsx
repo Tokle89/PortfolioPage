@@ -36,13 +36,13 @@ const Footer = () => {
         <div>
           <nav className="w-36 md:w-full">
             <ul className="text-primary text-2xl flex-col md:flex-row flex gap-10">
-              <NavLink className={({ isActive }) => isActive && `text-white border-b border-white`} to="/">
+              <NavLink className={({ isActive }) => (isActive ? `text-white border-b border-white` : undefined)} to="/">
                 Home
               </NavLink>
-              <NavLink className={({ isActive }) => isActive && `text-white border-b border-white`} to="/portfolio">
+              <NavLink className={({ isActive }) => (isActive ? `text-white border-b border-white` : undefined)} to="/portfolio">
                 Portfolio
               </NavLink>
-              <NavLink className={({ isActive }) => isActive && `text-white border-b border-white`} to="/contact">
+              <NavLink className={({ isActive }) => (isActive ? `text-white border-b border-white` : undefined)} to="/contact">
                 Let`s talk
               </NavLink>
             </ul>
