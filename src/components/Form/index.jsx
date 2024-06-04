@@ -37,32 +37,32 @@ const ContactForm = () => {
       .catch((err) => console.log(err));
   };
   return (
-    <div className=" bg-quaternary rounded border border-primary w-full max-w-[600px] py-5">
-      <h2 className="text-primary font-semibold text-3xl md:text-5xl text-center mb-5">Send me a message</h2>
+    <div className=" bg-quaternary rounded border border-primary w-full max-w-[550px] py-5">
+      <h2 className="text-primary font-semibold text-3xl md:text-4xl text-center mb-5">Send me a message</h2>
       <form ref={form} className=" flex flex-col " onSubmit={handleSubmit(onSubmit)}>
-        <div className="min-h-20 px-5 space-y-3 my-4 text-xl md:text-2xl ">
+        <div className="min-h-20 px-5 space-y-3 my-4  md:text-xl ">
           <label htmlFor="name" className="text-white ">
             Name
           </label>
-          <p className="text-red-500  font-medium mb-1">{errors.name?.message}</p>
-          <input {...register("user_name")} type="text" name="user_name" placeholder="Name" className=" bg-black text-xl text-white  placeholder-xl  h-[50px] w-full block rounded border border-primary p-2 focus:outline-none focus:border-4 focus:border-primary " />
+          <p className="text-red-500 md:text-xl  font-medium mb-1">{errors.name?.message}</p>
+          <input {...register("user_name")} type="text" name="user_name" placeholder="Name" className=" bg-black md:text-xl text-white  placeholder-xl  h-[50px] w-full block rounded border border-primary p-2 focus:outline-none focus:border-4 focus:border-primary " />
         </div>
-        <div className="min-h-20 px-5 space-y-3 my-5 text-xl md:text-2xl">
+        <div className="min-h-20 px-5 space-y-3 my-5 md:text-xl">
           <label htmlFor="email" className="text-white ">
             Email
           </label>
-          <p className="text-red-500 text-xl font-medium my-1">{errors.email?.message}</p>
-          <input {...register("user_email")} type="text" name="user_email" placeholder="Email" className="box-border bg-black text-xl  placeholder-xl  text-white h-[50px] w-full block rounded border border-primary p-2 focus:outline-none focus:border-4 focus:border-primary " />
+          <p className="text-red-500 md:text-xl font-medium my-1">{errors.email?.message}</p>
+          <input {...register("user_email")} type="text" name="user_email" placeholder="Email" className="box-border bg-black md:text-xl  placeholder-xl  text-white h-[50px] w-full block rounded border border-primary p-2 focus:outline-none focus:border-4 focus:border-primary " />
         </div>
-        <div className=" px-5 space-y-3 my-5 text-xl md:text-2xl">
+        <div className=" px-5 space-y-3 my-5 md:text-xl ">
           <label htmlFor="message" className="text-white ">
             Message
           </label>
-          <p className="text-red-500 text-xl  font-medium my-1">{errors.message?.message}</p>
-          <textarea {...register("message")} name="message" placeholder="Message" className="box-border min-h-[120px] bg-black text-xl  placeholder-xl  text-white  w-full block rounded border border-primary p-2 focus:outline-none focus:border-4 focus:border-primary " />
+          <p className="text-red-500 md:text-xl  font-medium my-1">{errors.message?.message}</p>
+          <textarea {...register("message")} name="message" placeholder="Message" className="box-border min-h-[120px] bg-black md:text-xl  placeholder-xl  text-white  w-full block rounded border border-primary p-2 focus:outline-none focus:border-4 focus:border-primary " />
         </div>
 
-        <div className="mt-5 px-5">
+        <div className="my-5 px-5">
           <CustomButton type="submit" className=" border-secondary bg-secondary text-black hover:bg-black hover:text-secondary ">
             Send
           </CustomButton>

@@ -1,9 +1,11 @@
 import Card from "../../components/Card";
+import RenderPageHeadInfo from "../../hooks/usePageHeadHandler";
 
 const Portfolio = () => {
+  RenderPageHeadInfo("FT | Portfolio", "Here you can find Fredrik Tokle's portfolio of projects.");
   return (
     <main className="max-w-7xl w-full mx-auto my-40 px-5">
-      <h1 className="text-3xl font-semibold md:text-5xl text-primary mb-20">Portfolio</h1>
+      <h1 className="text-3xl font-semibold md:text-4xl text-primary mb-20">Portfolio:</h1>
       <div className="space-y-40">
         <Card
           title="Holidaze"

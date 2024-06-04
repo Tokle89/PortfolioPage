@@ -5,12 +5,12 @@ const Card = ({ title, description, stack, liveLink, repoLink, img }) => {
   return (
     <div className="flex flex-col-reverse lg:flex-row gap-10 items-center">
       <div className="text-tertiary space-y-8 flex-1">
-        <h2 className="text-2xl md:text-4xl text-primary font-semibold">{title}</h2>
-        <div className="md:text-2xl space-y-3">
-          <h3 className=" text-primary">Description</h3>
+        <h2 className="text-2xl md:text-4xl text-white font-semibold">{title}</h2>
+        <div className="md:text-xl space-y-3">
+          <h3 className=" text-primary font-semibold">Description</h3>
           <p className="text-tertiary">{description}</p>
         </div>
-        <div className="md:text-2xl space-y-3">
+        <div className="md:text-xl space-y-3">
           <h3 className=" text-primary"> Stack</h3>
           <div className="flex flex-wrap gap-5">
             {stack.map(({ title, url }) => {

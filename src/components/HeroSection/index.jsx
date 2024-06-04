@@ -5,9 +5,9 @@ const HeroSection = () => {
   return (
     <section className="my-40  flex  flex-col-reverse lg:flex-row items-center  gap-20">
       <div className=" md:min-w-[504px] space-y-3 ">
-        <p className="text-base md:text-2xl">Hello world! i am</p>
-        <h1 className="text-3xl md:text-5xl font-semibold text-primary">Fredrik Tokle</h1>
-        <h2 className="text-3xl md:text-5xl font-semibold text-white">
+        <p className="text-base md:text-xl">Hello world! i am</p>
+        <h1 className="text-3xl md:text-4xl font-semibold text-primary">Fredrik Tokle</h1>
+        <h2 className="text-3xl md:text-4xl font-semibold text-white">
           <ReactTyped strings={["Front-End Devalop", " Front-End Developer"]} typeSpeed={40} backSpeed={30} />
         </h2>
         <div className="pt-5 flex gap-10">

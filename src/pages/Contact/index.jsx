@@ -1,15 +1,16 @@
 import ContactForm from "../../components/Form";
-
+import RenderPageHeadInfo from "../../hooks/usePageHeadHandler";
 const ContactPage = () => {
+  RenderPageHeadInfo("FT | Contact", "Here You can contact Fredrik Tokle for any inquiries or collaborations.");
   return (
-    <main className="w-full max-w-7xl px-5 mx-auto my-40 ">
+    <main className="w-full max-w-7xl px-5 mx-auto my-20 ">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div>
-          <h1 className="text-3xl md:text-5xl font-semibold text-primary mb-10">Let`s Talk</h1>
-          <a className="text-2xl md:text-3xl text-secondary hover:underline font-semibold" href="mailto:fredriktokle@gmail.com">
+          <h1 className="text-2xl md:text-4xl font-semibold text-primary mb-10">Let`s Talk</h1>
+          <a className="text-1xl md:text-2xl text-secondary hover:underline font-semibold" href="mailto:fredriktokle@gmail.com">
             FredrikTokle@gmail.com
           </a>
-          <div className="mt-10 flex gap-10">
+          <div className="mt-5 flex gap-10">
             <a href="https://www.linkedin.com/in/fredrik-tokle-0994a023b/">
               <button className="rounded-full border border-black p-3 transition-colors ease-in-out duration-200 bg-quaternary hover:border-secondary  ">
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" className="w-10 h-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

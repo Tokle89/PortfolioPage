@@ -2,8 +2,8 @@ import StackCard from "../StackCard";
 
 const StackSection = () => (
   <section className="space-y-4 mb-40">
-    <h2 className="text-3xl md:text-5xl text-primary mb-10">My Stack:</h2>
-    <p className="md:text-2xl text-tertiary">Front-End:</p>
+    <h2 className="text-3xl md:text-4xl text-primary mb-10">My Stack:</h2>
+    <p className="md:text-xl text-tertiary">Front-End:</p>
     <div className="flex flex-wrap gap-10">
       <StackCard title="HTML5" url="https://cdn.simpleicons.org/html5/#E34F26" />
       <StackCard title="CSS3" url="https://cdn.simpleicons.org/css3/#1572B6" />
@@ -14,7 +14,7 @@ const StackSection = () => (
       <StackCard title="Bootstrap" url="https://cdn.simpleicons.org/bootstrap/#7952B3" />
       <StackCard title="Vite.js" url="https://cdn.simpleicons.org/vite/#646cff" />
     </div>
-    <p className="md:text-2xl text-tertiary">Tools:</p>
+    <p className="md:text-xl text-tertiary">Tools:</p>
     <div className="flex flex-wrap gap-10">
       <StackCard title="VS Code" url="https://cdn.simpleicons.org/visualstudiocode/#007ACC" />
       <StackCard title="Github" url="https://cdn.simpleicons.org/github/FFFFFF" />

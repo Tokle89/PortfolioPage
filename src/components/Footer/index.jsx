@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <div>
           <nav className="w-36 md:w-full">
-            <ul className="text-primary text-2xl flex-col md:flex-row flex gap-10">
+            <ul className="text-primary text-xl flex-col md:flex-row flex gap-10">
               <NavLink className={({ isActive }) => (isActive ? `text-white border-b border-white` : undefined)} to="/">
                 Home
               </NavLink>
