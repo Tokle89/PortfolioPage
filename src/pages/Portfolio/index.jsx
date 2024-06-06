@@ -40,7 +40,7 @@ const Portfolio = () => {
             { title: "Sass", url: "https://cdn.simpleicons.org/sass/#CC6699" },
           ]}
           liveLink="https://rococo-churros-9ca4d1.netlify.app/"
-          repoLink="https://tokle89.github.io/auction-house"
+          repoLink="https://github.com/Tokle89/auction-house"
           img="/images/auction-house.jpg"
         />
       </div>

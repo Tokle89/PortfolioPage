@@ -18,11 +18,11 @@ const Card = ({ title, description, stack, liveLink, repoLink, img }) => {
             })}
           </div>
           <div className="pt-10 flex gap-10">
-            <a href={liveLink}>
+            <a href={liveLink} target="_blank">
               <CustomButton className={"bg-secondary border-secondary text-black hover:bg-black hover:text-secondary"}>View live</CustomButton>
             </a>
 
-            <a href={repoLink}>
+            <a href={repoLink} target="_blank">
               <CustomButton className={"bg-black border-secondary text-secondary hover:bg-secondary hover:text-black"}>Github repo</CustomButton>
             </a>
           </div>

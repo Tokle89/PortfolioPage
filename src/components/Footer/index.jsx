@@ -10,7 +10,7 @@ const Footer = () => {
             FredrikTokle@gmail.com
           </a>
           <div className="mt-5 flex gap-10">
-            <a href="https://www.linkedin.com/in/fredrik-tokle-0994a023b/">
+            <a href="https://www.linkedin.com/in/fredrik-tokle-0994a023b/" target="_blank">
               <button className="rounded-full border border-black p-3 transition-colors ease-in-out duration-200 bg-quaternary hover:border-secondary  ">
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" className="w-10 h-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   <path
@@ -21,7 +21,7 @@ const Footer = () => {
                 </svg>
               </button>
             </a>
-            <a href="https://github.com/Tokle89 ">
+            <a href="https://github.com/Tokle89 " target="_blank">
               <button className="rounded-full border border-black p-3 transition-colors ease-in-out duration-200 bg-quaternary hover:border-secondary  ">
                 <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" className="h-10 w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                   <path

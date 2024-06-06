@@ -15,14 +15,14 @@ const HeroSection = () => {
             <CustomButton className={"bg-secondary border-secondary text-black hover:bg-black hover:text-secondary"}>Let`s talk</CustomButton>
           </Link>
 
-          <Link to="/about">
+          <Link to="/portfolio">
             <CustomButton className={"bg-black border-secondary text-secondary hover:bg-secondary hover:text-black"}>Portfolio</CustomButton>
           </Link>
         </div>
       </div>
       <div className="border-4 border-primary rounded-full">
         <div className="rounded-full border-8 border-black">
-          <img src={"/images/portfolio.JPG"} alt="Fredrik Tokle" className=" rounded-full w-[200px] h-[200px] md:w-[280px] md:h-[280px] object-cover" />
+          <img src={"/images/portfolio.JPG"} alt="Fredrik Tokle" className=" rounded-full w-[200px] h-[200px] md:w-[280px] md:h-[280px] object-cover object-[0px_-90px]" />
         </div>
       </div>
     </section>
