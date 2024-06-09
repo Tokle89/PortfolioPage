@@ -1,12 +1,17 @@
 import ContactForm from "../../components/Form";
 import RenderPageHeadInfo from "../../hooks/usePageHeadHandler";
+import { useState } from "react";
+import UserMessage from "../../components/UserMessage";
 const ContactPage = () => {
+  const [showMessage, setShowMessage] = useState(false);
+  const [messageType, setMessageType] = useState("loading");
   RenderPageHeadInfo("FT | Contact", "Here You can contact Fredrik Tokle for any inquiries or collaborations.");
   return (
     <main className="w-full max-w-7xl px-5 mx-auto my-20 ">
-      <div className="flex flex-col md:flex-row justify-between items-center">
+      {showMessage && <UserMessage setShowMessage={setShowMessage} messageType={messageType} />}
+      <div className="flex flex-col md:flex-row gap-20 md:gap-10 justify-between items-center">
         <div>
-          <h1 className="text-2xl md:text-4xl font-semibold text-primary mb-10">Let`s Talk</h1>
+          <h1 className="text-2xl md:text-4xl font-semibold text-primary mb-5 md:mb-10">Let`s Talk</h1>
           <a className="text-1xl md:text-2xl text-secondary hover:underline font-semibold" href="mailto:fredriktokle@gmail.com">
             FredrikTokle@gmail.com
           </a>
@@ -34,7 +39,7 @@ const ContactPage = () => {
             </a>
           </div>
         </div>
-        <ContactForm />
+        <ContactForm setShowMessage={setShowMessage} setMessageType={setMessageType} />
       </div>
     </main>
   );

@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-primary p-8 ">
-      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-20  justify-between">
+    <footer className="border-t border-primary px-5 py-10 ">
+      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-10  justify-between">
         <div>
           <h3 className="text-2xl md:text-3xl text-primary mb-5">Contact me:</h3>
           <a className="text-2xl text-secondary hover:underline font-semibold" href="mailto:fredriktokle@gmail.com">

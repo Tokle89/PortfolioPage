@@ -16,7 +16,7 @@ const Header = () => {
         <div className="block md:hidden " onClick={() => setShowMobileNav((prev) => !prev)}>
           {showMobileNav ? <RiCloseLargeFill className="text-6xl animated animate-duration-200 fadeIn" /> : <IoMenu className="text-7xl animate-duration-200  animated fadeOut" />}
         </div>
-        {showMobileNav && <MobileNav />}
+        {showMobileNav && <MobileNav setShowMobileNav={setShowMobileNav} />}
       </div>
     </header>
   );
